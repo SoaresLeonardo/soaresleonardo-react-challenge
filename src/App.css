@@ -56,6 +56,10 @@
   border-radius: 50px;
 }
 
+.btn {
+  padding: 20px;
+}
+
 .btn button {
   margin-right: 20px;
 }
