@@ -13,6 +13,10 @@ export default function App() {
       timeStamp: event.timeStamp,
     };
 
+    if (list.length <= 0 && deleteHistory.length >= 1) {
+      setDeletedHistory([]);
+    }
+
     setList((prev) => [...prev, spanPosition]);
   };
 
@@ -40,7 +44,6 @@ export default function App() {
       const newArr = [...prev].slice(0, -1);
       return newArr;
     });
-
     setList((prev) => [...prev, deletehistory]);
   };
 
